@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+// import MapComponent from './components/MapComponent';
+import NewMap from './components/new-api-map/NewMap';
+
+// import WorldMap from './components/react-map';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			{/* <MapComponent /> */}
+			<NewMap />
+			{/* <WorldMap /> */}
+		</div>
+	);
 }
 
 export default App;
