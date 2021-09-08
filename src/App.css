@@ -1,10 +1,15 @@
+body {
+	background-color: rgb(1, 0, 17);
+}
+
 #map-holder {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 	overflow: hidden;
 	position: relative;
 	padding: 10px;
-	background-color: aquamarine;
+	border: 1px solid gray;
+	/* background-color: aquamarine; */
 }
 
 .close-button {
@@ -33,12 +38,35 @@
 }
 
 .province {
-	fill: #ccc;
+	fill: rgb(65, 65, 65);
 	cursor: pointer;
+	transition: all 1s;
 }
 
 .province.active {
-	fill: orange;
+	fill: rgba(126, 126, 126, 0);
+	transition: all 1s;
+}
+
+.localidad {
+	fill: black;
+	fill-opacity: 0;
+	transition: all 1s;
+}
+
+.localidad.active {
+	fill: rgb(255, 139, 31);
+	fill-opacity: 1;
+	transition: all 1s;
+}
+
+.capital {
+	fill: yellow;
+	transition: all 1s;
+}
+
+.gba {
+	fill: red;
 }
 
 .mesh {
@@ -65,4 +93,14 @@
 	background-color: white;
 	border: rem(1) solid #ddd;
 	box-shadow: 0 0 rem(8) rgba(192, 192, 192, 0.5);
+}
+
+.solo-bordes {
+	fill: none;
+	stroke: 1px solid red;
+}
+
+.solo-fill {
+	fill: tomato;
+	stroke: none;
 }
